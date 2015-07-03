@@ -1,0 +1,119 @@
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.container,
+.container > div {
+  height: 100%;
+}
+
+.drop-zone {
+  height: 100%;
+  position: relative;
+}
+
+.drop-zone .intro {
+  text-align: center;
+  width: 70%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: 100;
+  border: 2px dashed #ccc;
+}
+
+#open-diagram {
+  display: none;
+}
+
+.drop-zone > .note .intro {
+  font-size: 16px;
+  margin: 10px auto 20px;
+  text-align: left;
+  text-align: center;
+  padding: 15px;
+}
+
+.drop-zone > .error .note {
+  font-size: 14px;
+  text-align: center;
+  color: red;
+}
+
+.drop-zone input[type="file"]  {
+  display: inline-block;
+}
+
+#canvas, #canvas > div {
+   height: 100%;
+}
+
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 32%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.buttons > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.buttons > li > a {
+  color: #333;
+  background-color: #FFF;
+  border-color: #CCC;
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.buttons a {
+  opacity: 0.3;
+}
+
+.buttons input[type="file"] {
+  display: none;
+}
+
+.buttons a.active {
+  opacity: 1.0;
+}
+
+.list-items, .list-actions {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-main-title {
+  margin-bottom: 40px;
+}
+
+.section-main-title, .section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.alert {
+  margin-top: 10px;
+}
+
+.alert-list {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+

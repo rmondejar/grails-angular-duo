@@ -1,0 +1,20 @@
+  <input type="text" ng-model="search" class="search-query" placeholder="Search">
+  <table>
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th><a href="#/create"> [create]</a></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="author in authors | filter:search | orderBy:'name'" ng-show="author.id">
+      <td><a href="#/edit/{{author.id}}" target="_blank">{{author.name}}</a></td>
+      <td>{{author.surname}}</td>
+      <td>
+        <a href="#/edit/{{author.id}}"> [edit]</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
