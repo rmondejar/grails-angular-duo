@@ -1,5 +1,7 @@
 # grails-angular-duo
 
+Simple but effective grails & angular combination that can be used as a template to create new applications easily :
+
 ## 1) Frontend
 
 + AngularJS 1.4.x [official site] (https://angularjs.org/) 
@@ -10,10 +12,8 @@
 Tip : [nvm tool] (https://github.com/creationix/nvm) is an excellent way to install any Node version
 
 ```
-npm install
-npm install bower
+npm install -g bower grunt-cli
 bower install
-npm install grunt
 ```
 execute locally 
 ```
