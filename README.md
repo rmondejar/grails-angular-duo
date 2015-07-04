@@ -42,15 +42,3 @@ generate distribution
 ```
 grails war
 ```
-
-#### Workaround :
-
-Due yeoman-plugin has a bug in 0.2 version, you can install locally the provisional 0.3 version in your workspace : 
-
-```
-mkdir yeoman-frontend-0.3
-cd yeoman-frontend-0.3
-git pull https://github.com/rmondejar/yeoman-frontend.git
-grails package-plugin
-grails maven-install
-```
