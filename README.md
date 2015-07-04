@@ -13,6 +13,7 @@ Tip : [nvm tool] (https://github.com/creationix/nvm) is an excellent way to inst
 
 ```
 npm install -g bower grunt-cli
+npm install
 bower install
 ```
 execute locally 
@@ -44,7 +45,7 @@ grails war
 
 #### Workaround :
 
-Due yeoman-plugin has a bug in the versio 0.2,, you can install locally the provisional 0.3 version in your workspace : 
+Due yeoman-plugin has a bug in 0.2 version, you can install locally the provisional 0.3 version in your workspace : 
 
 ```
 mkdir yeoman-frontend-0.3
