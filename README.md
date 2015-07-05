@@ -27,8 +27,9 @@ grunt build
 
 ## 2) Backend 
 
-+ Grails 2.5.x : [official site] (https://grails.org/) | [REST documentation] (https://grails.github.io/grails-doc/latest/guide/webServices.html)
++ Grails 2.5.x [official site] (https://grails.org/) | [REST documentation] (https://grails.github.io/grails-doc/latest/guide/webServices.html)
 + Yeoman Plugin 0.3 : [plugin repository] (https://grails.org/plugin/yeoman-frontend)
++ Spring Security Plugin 2.0 [plugin repository] (http://grails.org/plugin/spring-security-core)
 
 ### How to :
 

@@ -1,9 +1,14 @@
 import library.Book
 import library.Author
+import org.example.Role
+import org.example.User
+import org.example.UserRole
 
 class BootStrap {
 
     def init = { servletContext ->
+
+        //data init
 
         Author author1 = new Author(name:'Philip K',surname:'Dick')
 
@@ -27,6 +32,19 @@ class BootStrap {
         ]
         books2.each {Book b -> author2.addToBooks(b)}
         author2.save(flush:true, failOnError: true)
+
+        //auth init
+        def adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true)
+        def userRole = new Role(authority: 'ROLE_USER').save(flush: true)
+
+        def testUser = new User(username: 'me', password: 'password')
+        testUser.save(flush: true)
+
+        UserRole.create testUser, adminRole, true
+
+        assert User.count() == 1
+        assert Role.count() == 2
+        assert UserRole.count() == 1
 
     }
     def destroy = {

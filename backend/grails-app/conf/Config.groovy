@@ -87,6 +87,15 @@ grails.hibernate.osiv.readonly = false
 
 yo.frontend.dir = "../frontend"
 
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.example.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.example.UserRole'
+grails.plugin.springsecurity.authority.className = 'org.example.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+        '/login/denied': ["permitAll"],
+        '/**'          : ["hasAnyRole('ROLE_ADMIN')"]
+]
+
 environments {
     development {
         grails.logging.jul.usebridge = true
@@ -117,3 +126,5 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
